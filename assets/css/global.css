@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+  }
+
+div.main_containers {
+  width: 100%;
+  height:100%;
+}
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:35pt;
+    color: rgb(7, 2, 52);   
+    font-weight: bolder;        
+    text-align: left;   
+    margin-top: 8pt;
+    margin-left: 10pt;
+}
+
+h2 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16pt;
+color: rgb(7, 2, 52);
+font-weight: lighter;
+text-align: left;
+margin-left: 10pt;
+margin-top: 15pt;
+line-height: 28pt;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:25pt;
+  color: rgb(7, 2, 52);    
+  font-weight: bolder;      
+  text-align: center;   
+  margin-top: 0pt;
+  margin-left: 10pt;
+  margin-bottom: 10pt;
+}
+
+
+section.special{
+  width: 100vw;
+  height: 135px;
+  background-color:white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 5px;}
+  
+  div.kotakan{
+    width: 60%;
+    height: 45px;
+    position: relative;
+    left: 20%
+
+  }
+
+  nav {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  section {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    align-self: center;
+    image-resolution: 100%;
+  }
+
+  .headers {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    color: rgb(37, 22, 4);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 20pt;
+  }
+
+/* LIMITED STOCK! GRAB NOW FAST!! */
+
+section.special {
+  font-size: large;
+  font-weight:lighter;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+  /* NAV BAR MENU */
+
+  nav .main_container .menu {
+    position: relative;
+    width: 135px;
+    height: 25px;
+    padding: 25px;
+    padding-top: 25px;
+    float: left;
+    color: rgb(1, 0, 29);       
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+
+ 
+  nav .main_container .menu:hover {
+    background-color: rgb(33, 77, 122);
+    color: white;
+    height: 25px;
+  }
+
+  .background-image {
+    width:fit-content;
+    height: auto;
+  }
+
+  div.gallery {
+  
+    padding: auto;
+    float: left;
+    width: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border-radius: 5pt;
+
+   margin-top: 10pt;
+   margin-left: 38pt;
+ 
+  }
+  
+  div.gallery:hover {
+    background-color:rgb(202, 202, 201);
+
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5pt;
+    align-self: auto;
+  }
+
+  .class .h2 {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    font-weight: lighter;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    width: 100%;
+    height: auto;
+  }
+
+  .column {
+    float: left;
+    width: 33%;
+    height: fit-content;
+    padding: 5px;
+    padding-left: 13pt;
+    padding-top: 30pt;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  * {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.main_container {
+  position: relative;
+  width: 100vw;
+  height: 50pt;
+  margin: auto auto;
+  margin-bottom: 10pt;
+}
+.main_container.threeinarow .card {
+  position: relative;
+  width: 40%;
+  height: 600px;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px;
+  padding-left: 15pt;
+  margin: 6pt;
+  margin-top: 20pt;
+  margin-left: 5%;
+  
+}
+
+div.fotofull {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 20pt;
+}
+
+
+.success {
+  border-color: #000000;
+  color: rgb(0, 0, 0);
+  width: 125pt;
+  height: 40pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  background-color: white;
+  position:relative; left:43%; top:10px;
+
+}
+
+.success:hover {
+  background-color: #000534;
+  color: white;
+  width: 125pt;
+  height: 40pt;
+}
+
+.learnmore {
+  border-color: #000000;
+  color: rgb(0, 0, 0);
+  width: 125pt;
+  height: 40pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  background-color: white;
+  position: relative; left: 10pt; top: 10pt;
+
+}
+
+.learnmore:hover {
+  background-color: #000534;
+  color: white;
+  width: 125pt;
+  height: 40pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+

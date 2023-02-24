@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  margin: 0;
+}
+
+.column {
+  width: 40%;
+  padding: 10px;
+  float: left;
+  position: relative;
+  margin-top: 50pt;
+}
+
+.columnn {
+  width: 60%;
+  padding: 10px;
+  float: left;
+  position: relative;
+  margin-top: 50pt;
+}
+
+.columns {
+  width: 25%;
+  padding: 10px;
+  float: left;
+  position: relative;
+}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.container {
+  position: relative;
+  display: none;
+  left: 60pt;
+  margin-top: 50pt;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.ratings {color: dodgerblue;}
+.size {color: black;}
+
+table.detail {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px 6px;
+  }
+
+  table.detail thead tr th {
+    background-color: black;
+    color: aliceblue;
+  }
+
+  nav {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+ /* NAV BAR MENU */
+
+ nav .main_container .menu {
+    position: relative;
+    width: 135px;
+    height: 25px;
+    padding: 25px;
+    padding-top: 25px;
+    float: left;
+    color: rgb(1, 0, 29);       
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+
+ 
+.main_container {
+  position: fixed;
+  width: 100vw;
+  height: 630px;
+  margin: auto auto;
+  margin-bottom: 10pt;
+}
+  nav .main_container .menu:hover {
+    background-color: rgb(33, 77, 122);
+    color: white;
+    height: 25px;
+  }
+
+  div.kotakan{
+    width: 60%;
+    height: 45px;
+    position: relative;
+    left: 20%
+
+  }
+
+</style>
+
+    </head>
+    <body>
+      <nav>
+        <div class="main_container">
+          <div class="kotakan">
+          <div class="menu" onclick="location.href='index.html'">HOME</div>
+          <div class="menu" onclick="location.href='shop.html'">THE SHOP</div>
+          <div class="menu" onclick="location.href='news.html'">NEWS</div>
+          <div class="menu" onclick="location.href='four.html'">ABOUT US</div>
+          <div class="menu" onclick="location.href='info.html'">INFO</div>
+        </div>
+      </nav>
+
+        <div class="row">
+          <div class="column" style="background-color:transparent">
+        
+
+            <div style="text-align:center">
+                <h2>Jeans Detail</h2>
+                <p>Click on the images below:</p>
+              </div>
+              
+              
+              <div class="container">
+              
+                <img id="expandedImg" style="width:70%">
+                <div id="imgtext"></div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <img src="assets/img/zoom1.jpg" alt="Details" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="columns">
+                  <img src="assets/img/zoom2.jpg" alt="Details" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="columns">
+                  <img src="assets/img/zoom3.jpg" alt="Details" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="columns">
+                  <img src="assets/img/zoom4.jpg" alt="Details" style="width:100%" onclick="myFunction(this);">
+                </div>
+              </div>
+
+              <script>
+              function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+              }
+              </script>
+              
+
+          </div>
+          <div class="columnn" style="background-color: text-replace;">
+            <h2>Jeans 1</h2>
+            <button class="btn size">Add to Cart</button>
+            <button class="btn ratings">2.023 Ratings</button>
+            <h2>Size Guide</h2>
+
+            <table class="detail">
+              <thead>
+                  <tr>
+                      <th>Size (Women)</th>
+                      <th>EU Size (Women)</th>
+                      <th>Waist Measurement (Women)</th>
+                  </tr>
+              </thead>
+      
+      <tbody>
+      <tr>
+          <td>3XS</td>
+          <td>30</td>
+          <td>48-55cm (18-21 inches)</td>
+        </tr>
+      
+        <tr>
+          <td>2XS</td>
+          <td>32</td>
+          <td>56-63cm (22-24 inches)</td>
+        </tr>
+      
+        <tr>
+          <td>XS</td>
+          <td>34</td>
+          <td>64-71cm (25-27 inches)</td>
+        </tr>
+
+        <tr>
+          <td>S</td>
+          <td>36</td>
+          <td>72-79cm (28-31 inches)</td>
+        </tr>
+      
+        <tr>
+          <td>M</td>
+          <td>38</td>
+          <td>80-87cm (31-33 inches)</td>
+        </tr>
+
+        <tr>
+          <td>L</td>
+          <td>40</td>
+          <td>88-95cm (34-37 inches)</td>
+        </tr>
+
+        <tr>
+          <td>XL</td>
+          <td>42</td>
+          <td>96-103cm (37-40 inches)</td>
+        </tr>
+      </tbody>
+      </tfoot>
+      </table>
+
+      <h2>Length Guide</h2>
+      <table class="detail">
+        <thead>
+            <tr>
+                <th>Length (Women)</th>
+                <th>Inner Leg Length (Women)</th>
+            </tr>
+        </thead>
+
+<tbody>
+<tr>
+    <td>L26</td>
+    <td>62-66cm (24-25 inches)</td>
+  </tr>
+
+  <tr>
+    <td>L28</td>
+    <td>67-71cm (26-27 inches)</td>
+  </tr>
+
+  <tr>
+    <td>L30</td>
+    <td>72-76cm (28-29 inches)</td>
+  </tr>
+
+  <tr>
+    <td>L32</td>
+    <td>77-81cm (30-31 inches)</td>
+  </tr>
+
+  <tr>
+    <td>L34</td>
+    <td>82-86cm (32-33 inches)</td>
+  </tr>
+
+  <tr>
+    <td>L36</td>
+    <td>87-91cm (34-35 inches)</td>
+  </tr>
+
+  <tr>
+    <td>L38</td>
+    <td>92-96cm (92-96 inches)</td>
+  </tr>
+</tbody>
+</tfoot>
+</table>
+
+          </div>
+        </div>
+</style>
+
+
+
+</body>
+</html>

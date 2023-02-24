@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(255, 255, 255);
+ 
+  }
+
+ 
+
+   nav .main_container .menu {
+    position: fixed;
+    width: 135px;
+    height: 25px;
+    padding: 25px;
+    padding-top: 15px;
+    float: left;
+    color: rgb(1, 0, 29);       
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    margin-bottom: 5pt;
+  }
+
+ 
+  nav .main_container .menu:hover {
+    background-color: rgb(33, 77, 122);
+    color: white;
+    height: 25px;
+  }
+  nav {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15pt;
+    color: rgb(48, 48, 48);   
+    font-weight: lighter;   
+    text-align: left; 
+  }
+
+  h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    color: rgb(48, 48, 48);   
+    font-weight: medium;   
+    text-align: left; 
+    line-height: 23pt;
+    margin-top: 10pt;
+  }
+  
+  .h7 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    color: rgb(48, 48, 48);   
+    font-weight: lighter;   
+    text-align: left; 
+    line-height: 23pt;
+  
+  }
+  
